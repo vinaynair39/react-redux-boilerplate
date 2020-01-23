@@ -1,0 +1,17 @@
+module.exports = {
+    //auth
+    LOGIN: 'lOGIN',
+    LOGOUT: 'LOGOUT',
+    LOADING_UI: 'LOADING_UI',
+    UNLOADING_UI: 'UNLOADING_UI',
+    SET_ERRORS: 'SET_ERRORS',
+    UNSET_ERRORS: 'UNSET_ERRORS',
+
+    //filers
+    ADD_FILTER: 'ADD_FILTER',
+    SET_START_DATE: 'SET_START_DATE',
+    SET_END_DATE: 'SET_END_DATE',
+    SORT_BY_LIKES: 'SORT_BY_LIKES',
+    SORT_BY_DATE: 'SORT_BY_DATE',
+
+};

@@ -1,0 +1,55 @@
+.bike-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #right-wheel , #left-wheel {
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  #man-bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+  }
+  
+  #hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+  }
+  
+  @keyframes wheel{
+    from{
+            transform: rotateZ(0deg);
+    }
+    to{
+            transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+  }
+  
+  @keyframes hat{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(45%);
+    }
+  }
